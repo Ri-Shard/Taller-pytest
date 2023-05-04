@@ -1,3 +1,4 @@
+from main import *
+
 def test_isPrime_test():
-    assert is_primo(2)==True
-    #olvide el nombre del commit
+    assert is_prime(2)==True
