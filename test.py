@@ -14,3 +14,7 @@ def test_is_prime_endpoint():
     response = client.get("/IsPrime/4")
     assert response.status_code == 200
     assert response.json() == False
+    
+    response = client.get("/IsPrime/2")
+    assert response.status_code == 200
+    assert response.json() == True
