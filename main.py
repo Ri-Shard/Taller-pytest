@@ -21,7 +21,7 @@ def fibonacci(pos: int):
     if pos == 0:
         return 0
     elif pos == 1:
-        return 2
+        return 1
     else:
         a = 0
         b = 1
