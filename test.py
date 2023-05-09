@@ -23,3 +23,7 @@ def test_fibonacci_endpoint():
     response = client.get("fibonacci/1")
     assert response.status_code == 200
     assert response.json() == 1
+
+    response = client.get("fibonacci/8")
+    assert response.status_code == 200
+    assert response.json() == {"fibonacci": 21}
